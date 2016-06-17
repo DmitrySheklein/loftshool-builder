@@ -129,12 +129,19 @@ body {
       margin-right: 27px;
       vertical-align: middle;
     }
-    &:last-child {
+    .social-list:last-child {
       margin-right: 0;
     }
-    a {
-      cursor: pointer;
-    }
+      .social-link {
+
+        cursor: pointer;
+      }
+      .vk-svg,.github-svg,.linked-in {
+        fill: rgba(0, 76, 209, 0.7);
+      }
+      .vk-svg:hover,.github-svg:hover,.linked-in:hover {
+        fill: rgb(0, 76, 209);
+      }
 }
 
 .info-footer-nav,
@@ -208,8 +215,11 @@ body {
       display: inline-block;
       width: 45px;
       height: 45px;
-      background: #f0efe9;
+      background: #f0efe9 url('../img/login.svg') no-repeat 50%;
       z-index: 10;
+      }
+    .body-wrap:nth-child(2)::before {
+      background: #f0efe9 url('../img/password.svg') no-repeat 50%;
       }
       .input {
         box-sizing: border-box;
@@ -220,6 +230,7 @@ body {
         border: none;
         outline: none;
       }
+
 }
 
 .human-test {
@@ -231,8 +242,9 @@ body {
     display: none;
   }
   input[type="checkbox"]:checked + label:before {
-    background-color: #0548be;
     box-shadow: inset 0 0 0 1px #0548be;
+    background: #0548be url('../img/check.svg') no-repeat 50%;
+    background-size: 15px;
   }
   label {
     position: relative;
