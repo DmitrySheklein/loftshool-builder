@@ -6,5 +6,6 @@ module.exports = function() {
     $.gulp.watch('./source/style/**/*.scss', $.gulp.series('sass'));
     $.gulp.watch('./source/template/**/*.jade', $.gulp.series('jade'));
     $.gulp.watch('./source/images/**/*.*', $.gulp.series('copy.image'));
+    // $.gulp.watch('./source/fonts/*.*', $.gulp.series('fonts'));
   });
 };
