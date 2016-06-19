@@ -89,7 +89,8 @@ body
             //h2.header_bg_title Мои работы
     section.main_about_me.clearfix
         section.info-about-me.clearfix
-            h1.about_me_title Обо мне
+            .about_me_title
+                h1.me_title Обо мне
             .block-about
                 img.about-pict(src='assets/img/avatar.jpg' alt='my photo' width='' height='390px')
                 h2.text_title Кто я
@@ -100,7 +101,9 @@ body
                     | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент.
                     | А пока посмотрите,как тут всё классно и красиво!
         section.advantages
-            h2.text_title Чем я могу быть вам полезен
+            h2.text_title
+                |Чем я могу быть
+                |вам полезен
             p.my-prof
                 | Больше всего меня привлекет Frontend разработка, но я также знаком и
                 | могу решать не сложные задачи на Backend. Но давайте по порядку.
@@ -137,13 +140,16 @@ body
     section.map.clearfix
         iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84253.79292970186!2d43.9772220009238!3d56.29492847878376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1466333233469', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
         .contacts-info
-            .contacts-text
                 h2.text_title Контакты
                 ul.map__contacts_list
-                li.map__list_item.map__list_item-skype dmitry.sheklein
-                li.map__list_item.map__list_item-tel +79998887766
-                li.map__list_item.map__list_item-mail sheklein.dima@gmail.com
-                li.map__list_item.map__list_item-adress Нижний Новгород
+                    li.map__list_item.item.skype
+                        a.contacts_link(href='/') dmitry.sheklein
+                    li.map__list_item.item.tel
+                        a.contacts_link(href='/') +79998887766
+                    li.map__list_item.item.mail
+                        a.contacts_link(href='/') sheklein.dima@gmail.com
+                    li.map__list_item.item.adress
+                        a.contacts_link(href='/') Нижний Новгород
 
         footer.footer#foot
             .content

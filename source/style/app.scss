@@ -861,41 +861,29 @@ body {
   float: left;
     .about_me_title {
       float: left;
-      margin-top: 0;
-
-    }
+      background: url(../img/star2.png) no-repeat 50% -50%;
+      }
+      .me_title {
+        margin-top: 0;
+        font-family: Sansus,sans-serif;
+        font-size: 63px;
+        line-height: 66px;
+        font-weight: 400;
+        color: #373e42;
+      }
     .block-about {
       float: right;
       width: 480px;
       padding-left: 25px;
       padding-right: 5px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
     .about-pict {
       width: auto;
       max-height: 390px;
     }
-    .text_title {
-      position: relative;
-      margin-top: 41px;
-      height: 25px;
-      font-size: 35px;
-      line-height: 41px;
-      font-family: Sansus,sans-serif;
-      text-align: center;
-      text-transform: uppercase;
-      color: #474b57;
-      }
-      .text_title:after {
-        display: block;
-        content: '';
-        position: absolute;
-        bottom: -25px;
-        left: 50%;
-        margin-left: -44.5px;
-        width: 89px;
-        height: 0;
-        border: 1.5px solid #566358;
-      }
     .text_about_me {
       width: 370px;
       margin-top: 39px;
@@ -904,7 +892,6 @@ body {
       font-size: 16px;
       line-height: 24px;
       font-weight: 400;
-      text-align: center;
     }
 }
 
@@ -913,15 +900,95 @@ body {
   //max-width: 890px;
   width: 50%;
   height: 833px;
-  background: #f2f0e8;
+  padding-left: 30px;
+  box-sizing: border-box;
+  background: #eae8e2;
+  .text_title {
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+  .my-prof {
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474b57;
+  }
   .dia {
     display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    margin-right: 40px;
+  }
+  .dia:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #243994;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .html5:after {
+    content: 'HTML5';
+  }
+  .css3:after {
+    content: 'CSS3';
+  }
+  .js:after {
+    content: 'JavaScript &jQuery';
+  }
+  .php:after {
+    content: 'PHP';
+  }
+  .mysql:after {
+    content: 'mySQL';
+  }
+  .nodejs:after {
+    content: 'Node.js &npm';
+  }
+  .mongo:after {
+    content: 'Mongo.db';
+  }
+  .git:after {
+    content: 'Git';
+  }
+  .gulp:after {
+    content: 'Gulp';
+  }
+  .bower:after {
+    content: 'Bower';
   }
 }
 
 
 
-
+.text_title {
+  position: relative;
+  margin-top: 41px;
+  height: 25px;
+  font-size: 35px;
+  line-height: 41px;
+  font-family: Sansus,sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #474b57;
+}
+.text_title:after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -44.5px;
+  width: 89px;
+  height: 0;
+  border: 1.5px solid #566358;
+}
 
 
 
@@ -941,19 +1008,62 @@ body {
     top: 50%;
     left: 50%;
     box-sizing: border-box;
-    padding: 18px 10px 30px 10px;
+    padding: 18px 10px 30px 16px;
     transform: translate(-50%, -50%);
     background: rgba(255,255,255,0.7);
   }
     .text_title {
+      margin-top: 0;
+      margin-bottom: 63px;
       text-align: center;
     }
     .map__contacts_list {
       list-style: none;
+      padding: 0;
+      margin: 0;
       }
       .map__list_item {
+        position: relative;
         display:inline-block;
-        width: 40%;
+        vertical-align: middle;
+        width: 49%;
+        margin-bottom: 30px;
+        opacity: .8;
+        color: #484b57;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 45px;
+        color: #474b57;
+      }
+      .contacts_link {
+        position: relative;
+        padding-left: 8px;
+        color: #474b57;
+        text-decoration: none;
+      }
+      .item:before {
+          display: inline-block;
+          vertical-align: middle;
+          content: '';
+          width: 45px;
+          height: 45px;
+        }
+      .skype:before {
+        background: url(../img/skype_n.svg) center no-repeat;
+        background-size: cover;
+      }
+      .tel:before {
+        background: url(../img/phone_n.svg) center no-repeat;
+        background-size: cover;
+      }
+      .mail:before {
+        background: url(../img/envelope_n.svg) center no-repeat;
+        background-size: cover;
+      }
+      .adress:before {
+        background: url(../img/map_n.svg) center no-repeat;
+        background-size: cover;
       }
 }
 
