@@ -938,3 +938,49 @@ body {
   color: #455a64;
   line-height: 26px;
 }
+
+
+
+
+//Адаптив
+
+
+@media (max-width: 380px) {
+  .container {
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .login {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -89px;
+  }
+  .info-nav-list a {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .login {
+    right: 20px;
+  }
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    width: 1800px;
+  }
+}
