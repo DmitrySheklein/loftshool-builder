@@ -852,8 +852,109 @@ body {
 
 //
 //Обо мне
+
+.info-about-me {
+  //max-width: 890px;
+  width: 50%;
+  height: 833px;
+  background: #f2f0e8;
+  float: left;
+    .about_me_title {
+      float: left;
+      margin-top: 0;
+
+    }
+    .block-about {
+      float: right;
+      width: 480px;
+      padding-left: 25px;
+      padding-right: 5px;
+    }
+    .about-pict {
+      width: auto;
+      max-height: 390px;
+    }
+    .text_title {
+      position: relative;
+      margin-top: 41px;
+      height: 25px;
+      font-size: 35px;
+      line-height: 41px;
+      font-family: Sansus,sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      color: #474b57;
+      }
+      .text_title:after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        margin-left: -44.5px;
+        width: 89px;
+        height: 0;
+        border: 1.5px solid #566358;
+      }
+    .text_about_me {
+      width: 370px;
+      margin-top: 39px;
+      color: #474b57;
+      font-family: Roboto,sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      text-align: center;
+    }
+}
+
+.advantages {
+  float: left;
+  //max-width: 890px;
+  width: 50%;
+  height: 833px;
+  background: #f2f0e8;
+  .dia {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .map {
+  height: 100%;
   position: relative;
+  .contacts-info {
+    width: 580px;
+    height: 285px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 18px 10px 30px 10px;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.7);
+  }
+    .text_title {
+      text-align: center;
+    }
+    .map__contacts_list {
+      list-style: none;
+      }
+      .map__list_item {
+        display:inline-block;
+        width: 40%;
+      }
 }
 
 //Блог

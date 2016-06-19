@@ -98,61 +98,65 @@
     <!--.header_bg//h2.header_bg_title Мои работы
     -->
   </header>
-  <section class="info-about-me">
-    <h1>Обо мне</h1><img src="assets/img/avatar.jpg" alt="my photo" width="150px" class="about-pict">
-    <div class="text-about">
-      <h2>Кто я</h2>
-      <p class="text-about-me">
-        Я веб разработчик из Новосибирска. Мне 27 лет. 
-        Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-        Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент.
-        А пока посмотрите,как тут всё классно и красиво!
+  <section class="main_about_me clearfix">
+    <section class="info-about-me clearfix">
+      <h1 class="about_me_title">Обо мне</h1>
+      <div class="block-about"><img src="assets/img/avatar.jpg" alt="my photo" width="" height="390px" class="about-pict">
+        <h2 class="text_title">Кто я</h2>
+        <p class="text_about_me">
+          Я веб разработчик из Новосибирска. Мне 27 лет. 
+          Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+          Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент.
+          А пока посмотрите,как тут всё классно и красиво!
+        </p>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2 class="text_title">Чем я могу быть вам полезен</h2>
+      <p class="my-prof">
+        Больше всего меня привлекет Frontend разработка, но я также знаком и
+        могу решать не сложные задачи на Backend. Но давайте по порядку.
       </p>
-    </div>
+      <div class="graphics">
+        <div class="front">
+          <h3>Frontend</h3>
+          <div class="diagrams">
+            <div class="dia html5"><img src="./assets/img/skill-html.png"></div>
+            <div class="dia css3"><img src="./assets/img/skill-css.png"></div>
+            <div class="dia js"><img src="./assets/img/skill-css.png"></div>
+          </div>
+        </div>
+        <div class="back">
+          <h3>Backend</h3>
+          <div class="diagrams">
+            <div class="dia php"><img src="./assets/img/skill-php.png"></div>
+            <div class="dia mysql"><img src="./assets/img/skill-mysql.png"></div>
+            <div class="dia nodejs"><img src="./assets/img/skill-node.png"></div>
+            <div class="dia mongo"><img src="./assets/img/skill-mongo.png"></div>
+          </div>
+        </div>
+        <div class="workflow">
+          <h3>WorkFlow</h3>
+          <div class="diagrams">
+            <div class="dia git"><img src="./assets/img/skill-git.png"></div>
+            <div class="dia gulp"><img src="./assets/img/skill-gulp.png"></div>
+            <div class="dia bower"><img src="./assets/img/skill-bower.png"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
-  <section class="advantages">
-    <h2>Чем я могу быть вам полезен</h2>
-    <p class="my-prof">
-      Больше всего меня привлекет Frontend разработка, но я также знаком и
-      могу решать не сложные задачи на Backend. Но давайте по порядку.
-    </p>
-    <div class="graphics">
-      <div class="front">
-        <h3>Frontend</h3>
-        <div class="diagrams">
-          <div class="dia html5"><img src="./assets/img/skill-html.png"></div>
-          <div class="dia css3"><img src="./assets/img/skill-css.png"></div>
-          <div class="dia js"><img src="./assets/img/skill-css.png"></div>
-        </div>
+  <section class="map clearfix">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84253.79292970186!2d43.9772220009238!3d56.29492847878376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1466333233469" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    <div class="contacts-info">
+      <div class="contacts-text">
+        <h2 class="text_title">Контакты</h2>
+        <ul class="map__contacts_list"></ul>
+        <li class="map__list_item map__list_item-skype">dmitry.sheklein</li>
+        <li class="map__list_item map__list_item-tel">+79998887766</li>
+        <li class="map__list_item map__list_item-mail">sheklein.dima@gmail.com</li>
+        <li class="map__list_item map__list_item-adress">Нижний Новгород</li>
       </div>
-      <div class="back">
-        <h3>Backend</h3>
-        <div class="diagrams">
-          <div class="dia php"><img src="./assets/img/skill-php.png"></div>
-          <div class="dia mysql"><img src="./assets/img/skill-mysql.png"></div>
-          <div class="dia nodejs"><img src="./assets/img/skill-node.png"></div>
-          <div class="dia mongo"><img src="./assets/img/skill-mongo.png"></div>
-        </div>
-      </div>
-      <div class="workflow">
-        <h3>WorkFlow</h3>
-        <div class="diagrams">
-          <div class="dia git"><img src="./assets/img/skill-git.png"></div>
-          <div class="dia gulp"><img src="./assets/img/skill-gulp.png"></div>
-          <div class="dia bower"><img src="./assets/img/skill-bower.png"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="map">
-    <div class="about__contacts">
-      <h2>Контакты</h2>
-      <ul class="map__contacts_list">
-        <li class="map__list_item map__list_item-skype">cuprum661</li>
-        <li class="map__list_item map__list_item-mail">cuprum19930@gmail.com</li>
-        <li class="map__list_item map__list_item-tel">+79221350965</li>
-        <li class="map__list_item map__list_item-adress">my-addres, 31, 54</li>
-      </ul>
     </div>
     <footer id="foot" class="footer">
       <div class="content">
