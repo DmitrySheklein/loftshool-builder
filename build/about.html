@@ -8,6 +8,7 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="assets/img/favicon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic&amp;amp;subset=latin,cyrillic-ext" type="text/css">
@@ -83,7 +84,7 @@
       <div class="user_block_name">Дмитрий Щеклеин</div>
       <div class="user_block_descr">Личный сайт веб разработчика</div>
     </div>
-    <div class="arrow"><a href="/" class="to-work">
+    <div class="arrow_down"><a href="/" class="to-work">
         <?xml version="1.0" encoding="utf-8"?>
         <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -95,10 +96,18 @@
                 c0.391,0.391,0.391,1.031,0,1.422L13.293,15.871z"/>
         </g>
         </svg></a></div>
-    <!--.header_bg//h2.header_bg_title Мои работы
-    -->
   </header>
   <section class="main_about_me clearfix">
+    <div class="header_about_me">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="about_me_svg">
+      <g>
+      <polygon points="50,100 100,5 100,100" class="svg__item about_me_svg_right"></polygon>
+      </g>
+      <g>
+      <polygon points="0,0 0,100 50,100" class="svg__item about_me_svg_left"></polygon>
+      </g>
+      </svg>
+    </div>
     <section class="info-about-me clearfix">
       <div class="about_me_title">
         <h1 class="me_title">Обо мне</h1>
@@ -106,8 +115,10 @@
       <div class="block-about"><img src="assets/img/avatar.jpg" alt="my photo" width="" height="390px" class="about-pict">
         <h2 class="text_title">Кто я</h2>
         <p class="text_about_me">
-          Я веб разработчик из Новосибирска. Мне 27 лет. 
+          Я веб разработчик из Нижнего Новгорода. Мне 20 лет. 
           Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+        </p>
+        <p class="text_about_me">
           Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент.
           А пока посмотрите,как тут всё классно и красиво!
         </p>
@@ -125,58 +136,145 @@
       <div class="graphics">
         <div class="front">
           <h3>Frontend</h3>
-          <div class="diagrams">
-            <div class="dia html5"><img src="./assets/img/skill-html.png"></div>
-            <div class="dia css3"><img src="./assets/img/skill-css.png"></div>
-            <div class="dia js"><img src="./assets/img/skill-css.png"></div>
-          </div>
+          <ul class="diagrams">
+            <li class="dia html5">
+              <svg width="130" height="130"
+              class="g-circles">
+                <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                <text x="65" y="50%" class="diagram__text">HTML5</text>
+              </svg>
+            </li>
+            <li class="dia css3">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">CSS3</text>
+              </svg>
+            </li>
+            <li class="dia js">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">
+              <tspan x="65" y="50%">JavaScript</tspan>
+              <tspan x="65" y="60%">& jQuery</tspan>
+              </text>
+              </svg>
+            </li>
+          </ul>
         </div>
         <div class="back">
           <h3>Backend</h3>
-          <div class="diagrams">
-            <div class="dia php"><img src="./assets/img/skill-php.png"></div>
-            <div class="dia mysql"><img src="./assets/img/skill-mysql.png"></div>
-            <div class="dia nodejs"><img src="./assets/img/skill-node.png"></div>
-            <div class="dia mongo"><img src="./assets/img/skill-mongo.png"></div>
-          </div>
+          <ul class="diagrams">
+            <li class="dia php">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">PHP</text>
+              </svg>
+            </li>
+            <li class="dia mysql">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">mySQL</text>
+              </svg>
+            </li>
+            <li class="dia nodejs">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">
+              <tspan x="65" y="50%">Node.js</tspan>
+              <tspan x="65" y="60%">& npm</tspan></text>
+              </svg>
+            </li>
+            <li class="dia mongo">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">Mongo.db</text>
+              </svg>
+            </li>
+          </ul>
         </div>
         <div class="workflow">
           <h3>WorkFlow</h3>
-          <div class="diagrams">
-            <div class="dia git"><img src="./assets/img/skill-git.png"></div>
-            <div class="dia gulp"><img src="./assets/img/skill-gulp.png"></div>
-            <div class="dia bower"><img src="./assets/img/skill-bower.png"></div>
-          </div>
+          <ul class="diagrams">
+            <li class="dia git">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">Git</text>
+              </svg>
+            </li>
+            <li class="dia gulp">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">Gulp</text>
+              </svg>
+            </li>
+            <li class="dia bower">
+              <svg width="130" height="130"
+              class="g-circles" >
+              <circle r="50"
+              cx="65" cy="65" stroke="#ccc" fill="none"/>
+              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+              <text x="65" y="50%" class="diagram__text">Bower</text>
+              </svg>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
   </section>
-  <section class="map clearfix">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84253.79292970186!2d43.9772220009238!3d56.29492847878376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1466333233469" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+  <section class="map">
+    <div class="map_image">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50096.41806676415!2d44.060320602675965!3d56.29583397800769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1466606038665" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+      <!--img(src='assets/img/map.jpg' alt='map' width='' height='')-->
+    </div>
     <div class="contacts-info">
       <h2 class="text_title">Контакты</h2>
       <ul class="map__contacts_list">
-        <li class="map__list_item item skype"><a href="/" class="contacts_link">dmitry.sheklein</a></li>
-        <li class="map__list_item item tel"><a href="/" class="contacts_link">+79998887766</a></li>
-        <li class="map__list_item item mail"><a href="/" class="contacts_link">sheklein.dima@gmail.com</a></li>
-        <li class="map__list_item item adress"><a href="/" class="contacts_link">Нижний Новгород</a></li>
+        <li class="map__list_item item skype"><a href="skype:dmitry.sheklein" class="contacts_link">dmitry.sheklein</a></li>
+        <li class="map__list_item item tel"><a href="tel:+79998887766" class="contacts_link">+79998887766</a></li>
+        <li class="map__list_item item mail"><a href="mailto:sheklein.dima@gmail.com" class="contacts_link">sheklein.dima@gmail.com</a></li>
+        <li class="map__list_item item adress"><a href="https://goo.gl/maps/pYNDrbFkVhz" class="contacts_link">Нижний Новгород</a></li>
       </ul>
     </div>
-    <footer id="foot" class="footer">
-      <div class="content">
+    <footer class="footer">
+      <div class="content clearfix">
         <div class="content_info">
           <p class="info_text">
             Этот сайт я сделал в рамках обучения в Школе
              онлайн образования LoftSchool.
-            
           </p>
         </div>
         <div class="navigation-map">
           <ul class="block_menu">
-            <li class="block_menu_list"><a href="Works.html">Мои работы</a></li>
-            <li class="block_menu_list"><a href="About.html">Обо мне</a></li>
-            <li class="block_menu_list"><a href="Blog.html">Блог</a></li>
-            <li class="block_menu_list"><a href="index.html">Авторизация</a></li>
+            <li class="block_menu_list"><a href="works.html" class="link">Мои работы</a></li>
+            <li class="block_menu_list"><a href="about.html" class="link">Обо мне</a></li>
+            <li class="block_menu_list"><a href="blog.html" class="link">Блог</a></li>
+            <li class="block_menu_list"><a href="index.html" class="link">Авторизация</a></li>
           </ul>
           <ul class="info-social">
             <li class="social-list"><a href="/" class="social-link">
@@ -244,7 +342,18 @@
           </ul>
         </div>
       </div>
-      <div class="copyright"><span>© Дмитрий Щеклеин | Создано с любовью в LoftSchool | 2016</span></div>
+      <div class="copyright"><span>© Дмитрий Щеклеин |</span><span>Создано с любовью в LoftSchool | 2016</span></div>
     </footer>
   </section>
 </body>
+<nav id="menu" class="nav nav_main nav_close">
+  <div class="close_btn">
+    <button id="btn_close" type="button" class="menu-toggle active"><span class="line"></span></button>
+  </div>
+  <ul class="nav__list">
+    <li class="nav__item"><a href="/works.html" class="nav__link nav__link_activ">Мои работы</a></li>
+    <li class="nav__item"><a href="/blog.html" class="nav__link">Блог</a></li>
+    <li class="nav__item"><a href="/about.html" class="nav__link">Обо мне</a></li>
+    <li class="nav__item"><a href="/index.html" class="nav__link">Авторизация</a></li>
+  </ul>
+</nav>

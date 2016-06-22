@@ -1,0 +1,104 @@
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: rem(145px);
+  position: absolute;
+  bottom: 0;
+  padding-top: rem(25px);
+  left: 0;
+  background-color: rgba(28,31,41,.85);
+  .content_info {
+    box-sizing: border-box;
+    max-width: rem(600px);
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+    float: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: rem(96px);
+  }
+  .info_text {
+    font: 300 16px/24px roboto;
+    font-size: rem(16px);
+    line-height: rem(24px);
+    color: #fff;
+  }
+  .navigation-map {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: rem(580px);
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+    float: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 96px;
+  }
+  .block_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .block_menu_list {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    margin-left: rem(41px);
+  }
+  .block_menu_list:first-child {
+    margin-left: 0;
+  }
+  .link {
+    font: 500 roboto;
+    font-size: rem(16px);
+    color: #fff;
+    text-decoration: none;
+  }
+  .info-social {
+    margin-top: auto;
+    margin-left: 0;
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+  }
+  .social-list {
+    margin-left: rem(27px);
+  }
+  .vk-svg,.github-svg,.linked-in {
+    fill: rgba(255,255,255,.5);
+  }
+  .contacts {
+    box-sizing: border-box;
+    max-width: rem(600px);
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+    float: left;
+    height: 96px;
+    .contacts_list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font: 300  roboto;
+      font-size: rem(16px);
+      color: #fff;
+      opacity: .5;
+    }
+    .contacts_li {
+      margin-bottom: 5px;
+    }
+  }
+  .copyright {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height: rem(38px);
+    background-color: rgba(8,60,150,.85);
+    text-align: center;
+    font-size: rem(16px);
+    line-height: rem(38px);
+    font-weight: 100;
+  }
+}

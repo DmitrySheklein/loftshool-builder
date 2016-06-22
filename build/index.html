@@ -8,6 +8,7 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="assets/img/favicon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic&amp;amp;subset=latin,cyrillic-ext" type="text/css">
@@ -19,9 +20,8 @@
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
-    <div class="background">
-      <!--img(src='assets/img/night_no_bg.jpg' alt='background' width="1920px" height="1080px")--><img src="assets/img/night-photo.jpg" alt="background" width="1920px" height="1080px">
-    </div>
+  </body>
+  <div class="wrapper">
     <div class="container">
       <div class="login"><a href="/">Авторизоваться</a></div>
       <div class="user-card">
@@ -98,12 +98,12 @@
             <h1>Авторизуйтесь</h1>
           </div>
           <div class="authorize-form">
-            <div class="form-body">
-              <div class="body-wrap">
-                <input type="text" placeholder="Логин" class="input">
+            <form class="form-body">
+              <div class="wrap">
+                <input type="text" placeholder="Логин" class="input wrap">
               </div>
-              <div class="body-wrap">
-                <input type="password" placeholder="Пароль" class="input">
+              <div class="wrap">
+                <input type="password" placeholder="Пароль" class="input wrap">
               </div>
               <div class="human-test">
                 <input type="checkbox" id="human">
@@ -111,22 +111,20 @@
               </div>
               <div class="robot-test">
                 <div class="text">Вы точно не робот?</div>
-                <form>
-                  <input type="radio" id="yes" value="yes">
-                  <label for="yes" class="radiobtn">Да</label>
-                  <input type="radio" id="no" value="no">
-                  <label for="no" class="radiobtn">Не уверен</label>
-                </form>
+                <input name="is-robot" type="radio" id="yes" value="yes">
+                <label for="yes" class="radiobtn">Да</label>
+                <input name="is-robot" type="radio" id="no" value="no">
+                <label for="no" class="radiobtn">Не уверен</label>
               </div>
-            </div>
+              <ul class="autorize-footer-btn">
+                <li class="autorize-nav-list"><a href="index.html" class="home">На главную</a></li>
+                <li class="autorize-nav-list"><a href="/">Войти</a></li>
+              </ul>
+            </form>
           </div>
-          <ul class="autorize-footer-btn">
-            <li class="autorize-nav-list"><a href="/" class="home">На главную</a></li>
-            <li class="autorize-nav-list"><a href="/">Войти</a></li>
-          </ul>
         </div>
       </div>
-      <div class="copy"><span class="copyright">© Дмитрий Щеклеин | создано с любовью в LoftSchool | 2016</span></div>
     </div>
-  </body>
+  </div>
+  <div class="copy"><span class="copyright">© Дмитрий Щеклеин | создано с любовью в LoftSchool | 2016</span></div>
 </html>

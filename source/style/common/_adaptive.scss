@@ -1,0 +1,132 @@
+@media (max-width: 1800px) {
+
+  .container {
+    width: 1800px;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+  .container {
+    width: 1200px;
+  }
+  .footer {
+    .content_info {
+      max-width: rem(380px);
+    }
+    .navigation-map {
+      max-width: rem(480px);
+    }
+  }
+  .blog__themes {
+    max-width: 280px;
+    .blog__list {
+      padding-left: 5%;
+    }
+  }
+  .blog__content  {
+    float: right;
+    max-width: 880px;
+  }
+
+}
+  //Планшет
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+    .login {
+      right: 20px;
+    }
+    .container {
+      width: 768px;
+    }
+    .footer {
+      padding-top: rem(10px);
+      .content_info {
+        float: none;
+        max-width: 100%;
+        text-align: center;
+        height: rem(45px);
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .navigation-map {
+        max-width: rem(550px);
+        border-right: none;
+        height: auto;
+      }
+      .contacts {
+        float: right;
+      }
+    }
+
+    .blog__themes {
+      display: none;
+    }
+    .blog__content {
+      width: 100%;
+    }
+
+
+//    обо мне
+    .info-about-me {
+      width: 100%;
+      float: none;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .about_me_svg .about_me_svg_right {
+      fill: #F0EFE9;
+    }
+    .advantages {
+      float: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  .info-about-me .block-about {
+    min-height: 100%;
+  }
+}
+
+  //Мобильные
+@media (max-width: 380px) {
+    html {
+      font-size: 12px;
+    }
+    .container {
+      width: 100%;
+      margin: auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .login {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      margin-left: -89px;
+    }
+    .info-nav-list a {
+      padding: 0;
+    }
+    .footer {
+      .contacts {
+        width: 100%;
+        text-align: center;
+      }
+      .copyright span {
+        display: block;
+      }
+    }
+//    обо мне
+  .map .map__list_item {
+    //display: block;
+  }
+}
+
+

@@ -5,13 +5,10 @@ html
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
-
-    .background
-      //img(src='assets/img/night_no_bg.jpg' alt='background' width="1920px" height="1080px")
-      img(src='assets/img/night-photo.jpg' alt='background' width="1920px" height="1080px")
+  .wrapper
     .container
       .login
-        a(href="/") Авторизоваться
+          a(href="/") Авторизоваться
       .user-card
         .block-info
           .info-photo
@@ -90,28 +87,26 @@ html
           .authorize
             h1 Авторизуйтесь
           .authorize-form
-            .form-body
-              .body-wrap
-                input(type='text' class='input' placeholder='Логин')
-              .body-wrap
-                input(type='password' class='input' placeholder='Пароль')
+            form.form-body
+              .wrap
+                input(type='text' class='input wrap' placeholder='Логин')
+              .wrap
+                input(type='password' class='input wrap' placeholder='Пароль')
               .human-test
                 input(type='checkbox' id='human')
                 label(for='human') Я человек
               .robot-test
                 .text
                   Вы точно не робот?
-                form
-                  input(type='radio' id='yes'  value='yes')
-                  label(for='yes' class='radiobtn') Да
-                  input(type='radio' id='no' value='no')
-                  label(for='no' class='radiobtn') Не уверен
-
-          ul.autorize-footer-btn
-            li.autorize-nav-list
-              a.home(href='/') На главную
-            li.autorize-nav-list
-              a(href='/') Войти
-      .copy
+                input(name="is-robot" type='radio' id='yes'  value='yes')
+                label(for='yes' class='radiobtn') Да
+                input(name="is-robot" type='radio' id='no' value='no')
+                label(for='no' class='radiobtn') Не уверен
+              ul.autorize-footer-btn
+                li.autorize-nav-list
+                  a.home(href='index.html') На главную
+                li.autorize-nav-list
+                  a(href='/') Войти
+  .copy
         span.copyright © Дмитрий Щеклеин | создано с любовью в LoftSchool | 2016
 
