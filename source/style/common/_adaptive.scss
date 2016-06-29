@@ -33,65 +33,77 @@
 
 }
   //Планшет
-  @media (max-width: 768px) {
-    html {
-      font-size: 14px;
-    }
-    .login {
-      right: 20px;
-    }
-    .container {
-      width: 768px;
-    }
-    .footer {
-      padding-top: rem(10px);
-      .content_info {
-        float: none;
-        max-width: 100%;
-        text-align: center;
-        height: rem(45px);
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .navigation-map {
-        max-width: rem(550px);
-        border-right: none;
-        height: auto;
-      }
-      .contacts {
-        float: right;
-      }
-    }
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .login {
+    right: 20px;
+  }
+  .container {
+    width: 768px;
+  }
+  .map .map__list_item {
+    display: block;
+    width: 100%;
+  }
 
-    .blog__themes {
-      display: none;
-    }
-    .blog__content {
-      width: 100%;
-    }
+  .blog__themes {
+    display: none;
+  }
+  .blog__content {
+    width: 100%;
+  }
 
 
 //    обо мне
-    .info-about-me {
-      width: 100%;
-      float: none;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-    .about_me_svg .about_me_svg_right {
-      fill: #F0EFE9;
-    }
-    .advantages {
-      float: none;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-  .info-about-me .block-about {
-    min-height: 100%;
+  .info-about-me {
+    width: 100%;
+    float: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
+  .about_me_svg .about_me_svg_right {
+    fill: #F0EFE9;
+  }
+  .advantages {
+    float: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.info-about-me .block-about {
+  min-height: 100%;
+}
+.footer {
+  padding-top: rem(10px);
+  .content_info {
+    float: none;
+    max-width: 100%;
+    text-align: center;
+    height: rem(45px);
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .navigation-map {
+    max-width: rem(550px);
+    border-right: none;
+    height: auto;
+    padding-top: rem(10px);
+  }
+  .block_menu {
+    margin-bottom: rem(15px);
+  }
+  .contacts {
+    float: right;
+    text-align: right;
+    padding-top: rem(10px);
+  }
+}
 }
 
   //Мобильные
@@ -114,18 +126,38 @@
     .info-nav-list a {
       padding: 0;
     }
-    .footer {
-      .contacts {
-        width: 100%;
-        text-align: center;
-      }
-      .copyright span {
-        display: block;
+
+//    обо мне
+  .advantages .dia {
+    margin-right: rem(24px);
+  }
+  .map .contacts-info {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+  }
+//footer
+  .footer {
+    .content_info {
+      height: rem(60px);
+    }
+    .navigation-map {
+      padding-bottom: rem(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      .block_menu_list {
+        margin-left: rem(15px);
       }
     }
-//    обо мне
-  .map .map__list_item {
-    //display: block;
+
+    .info-social {
+      justify-content: center;
+    }
+    .contacts {
+      width: 100%;
+      text-align: center;
+    }
+    .copyright span {
+      display: block;
+    }
   }
 }
 

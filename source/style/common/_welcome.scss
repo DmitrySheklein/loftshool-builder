@@ -33,6 +33,19 @@
   margin-right: auto;
   margin-bottom: 60px;
 }
+
+.flipped{
+  animation-name: rotate;
+  animation-duration: .5s;
+}
+@keyframes rotate {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(180deg);
+  }
+}
 .block-info {
   //display: none;
   position: absolute;
@@ -294,4 +307,22 @@
   font: 100 16px roboto;
   text-align: center;
   color: #fff;
+}
+
+// Преловдер
+.preloader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../img/night_prel_bg.jpg') no-repeat;
+  z-index: 1000;
+  .loader-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

@@ -1,18 +1,55 @@
 .nav_main {
   display: none;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   min-height: 100%;
   opacity: 0.87;
-  background-color: #183669;
+  //background-color: #183669;
   z-index: 100;
   background-repeat: no-repeat;
 }
+.menu {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.menu:after,
+.menu:before{
+  content:'';
+  display: block;
+  float: left;
+  background-color: rgba(24,54,105, .7);
+  width:50%;
+  height: 100%;
+  transition: transform, 5s;
+}
+.menu:before{
+  transform:translateX(-100%)
+}
+
+.menu:after{
+  transform:translateX(100%)
+}
+
+.menu.active:before{
+  transform:translateX(0)
+}
+
+.menu.active:after{
+  transform:translateX(0)
+}
+
 .close_btn {
-  padding: 35px 20px;
-  text-align: right;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  //padding: 35px 20px;
+  //text-align: right;
 }
 .menu-toggle {
   background: transparent;
@@ -57,11 +94,18 @@
     transform: rotate(45deg);
   }
 }
-.nav_main .nav__list {
+.nav__list {
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   text-align: center;
   margin: auto;
   padding: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
 }
 .nav_main .nav__item {
   display: block;
@@ -76,4 +120,9 @@
     color: white;
     text-decoration: none;
   }
+}
+.nav__list_show{
+  transition: all 0s ease 4s;
+  visibility: visible;
+  opacity: 1;
 }

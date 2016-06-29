@@ -188,8 +188,8 @@
     }
   }
   .contacts-info {
-    width: rem(580px);
-    height: rem(285px);
+    max-width: rem(580px);
+    min-height: rem(285px);
     position: absolute;
     top: 50%;
     left: 50%;
