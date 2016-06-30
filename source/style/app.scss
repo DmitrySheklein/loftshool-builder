@@ -2,6 +2,7 @@
   font-family: sansus;
   src: url(../fonts/Sansus-Webissimo-Regular.ttf);
 }
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500&subset=latin,cyrillic);
 
 @function rem($px) {
   @return $px / 16px + 0rem;
@@ -109,7 +110,7 @@ body {
     position: absolute;
     left: 50%;
     bottom: rem(240px);
-    margin-left: rem(-7px);
+    margin-left: rem(-14px);
     text-align: center;
   }
 }
@@ -137,13 +138,15 @@ body {
       left: 0;
     }
   .user_block_name {
-    font: 500 roboto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: rem(35px);
     color: #fff;
     text-align: center;
   }
   .user_block_descr {
-    font: 100 roboto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
     font-size: rem(16px);
     color: #fff;
     text-align: center;
@@ -244,12 +247,12 @@ body {
   .container_link {
     padding-left: rem(50px);
     position: relative;
-    line-height: rem(45px);
+    line-height: 45px;
     margin: 0 auto;
     text-decoration: none;
     display: block;
-    width: rem(150px);
-    height: rem(45px);
+    width: 160px;
+    height: 45px;
     background-color: #004cd1;
     color: #FFFFFF;
   }
@@ -267,7 +270,6 @@ body {
     height: 70%;
     width: 50%;
     display: flex;
-    float: right;
     justify-content: center;
     align-items: center;
     background-color: #e3e2de;
@@ -293,7 +295,7 @@ body {
     .slider_picture {
       position: absolute;
       max-width: 100%;
-      max-height: 100%;
+      height: 100%;
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
@@ -358,7 +360,7 @@ body {
         overflow: hidden;
       }
         img {
-          width: 100%;
+          max-width: 100%;
           height: auto;
         }
       .container_txt {
@@ -491,8 +493,6 @@ body {
 }
 
 .arrow_up {
-  position: absolute;
-  left: 50%;
   transform: rotate(180deg);
   cursor: pointer;
 }

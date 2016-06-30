@@ -1,15 +1,20 @@
 .main_blog_header {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   transform: translateY(-100%);
   width: 100%;
-  height: rem(200px);
-  background: url("../img/bg-light.svg")no-repeat center;
-  background-size: cover;
+  //height: rem(200px);
+  //background: url("../img/bg-light.svg")no-repeat center;
+  //background-size: cover;
   overflow: hidden;
 }
-
+.header-corner {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  fill: #FAF8F0;
+}
 .main-blog {
   position: relative;
   background-color: #faf8f0;
@@ -80,6 +85,9 @@
   color: #455a64;
     ul,li {
       color: inherit;
+    }
+    img {
+      max-width: 100%;
     }
 }
 .content__text-paragraph {
