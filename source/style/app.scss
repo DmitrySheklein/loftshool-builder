@@ -131,7 +131,7 @@ body {
     overflow: hidden;
     }
     img {
-      width: 100%;
+      max-width: 100%;
       position: absolute;
       top:0;
       left: 0;
@@ -166,7 +166,7 @@ body {
     transform: translateY(-100%);
     width: 100%;
     height: rem(340px);
-    background: url("../img/bg.svg")no-repeat;
+    background: url("../img/bg.svg")no-repeat center;
     background-size: cover;
     text-align: center;
   }
