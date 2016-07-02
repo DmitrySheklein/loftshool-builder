@@ -7,8 +7,15 @@
   right: 0;
   bottom: 0;
   z-index: -2;
+
+  background-color: #003085;
   video {
-    //min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: auto;
+    height: auto;
   }
 }
 .mountain_bg {
@@ -17,23 +24,25 @@
   left: 0;
   height: auto;
   max-height: 400px;
+  //height: 400px;
   width: 100%;
 }
 .mountain_bg img {
-  max-width: 100%;
-  height: 100%;
-  max-height: 400px;
+  max-width: 110%;
+  //height: 100%;
+  //max-height: 400px;
 }
-.wrapper .container {}
+//.mountain_bg .img {
+//  position: absolute;
+//  width: 5760px;
+//  height: 100%;
+//  left: 50%;
+//  margin-left: -2880px;
+//}
 .login {
   display: block;
   width: 178px;
   height: 43px;
-
-  position: absolute;
-  top: rem(24px);
-  right: rem(100px);
-
   text-align: center;
   border: 1px solid #fff;
 
@@ -54,7 +63,7 @@
 //Информация пользователя
 .user-card {
   position: relative;
-  width:380px;
+  width: rem(380px);
   height:395px;
 
   margin-left: auto;
@@ -187,7 +196,7 @@
 
     text-align: center;
     font-family:"Roboto", sans-serif;
-    font-size: 16px;
+    font-size: rem(14px);
     line-height:45px;
     font-weight: 500;
     text-decoration: none;
@@ -347,16 +356,25 @@
 }
 //Футер
 .copy {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
   width:100%;
   height: 60px;
 
-  font: 100 16px roboto;
+  font-family: "Roboto", sans-serif;
+  font-size: rem(16px);
+  font-weight: 100;
   text-align: center;
   color: #fff;
+  .copyright {
+    position: relative;
+    display: inline;
+    margin-right: 12px;
+    &::after {
+        content: '|';
+        position: absolute;
+        top: 0;
+        right: -8px;
+    }
+  }
 }
 
 // Преловдер

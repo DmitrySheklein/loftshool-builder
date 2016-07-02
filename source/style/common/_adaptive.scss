@@ -1,16 +1,10 @@
 @media (max-width: 1800px) {
 
-  .container {
-    width: 1800px;
-  }
 }
 
 @media (max-width: 1200px) {
   html {
     font-size: 15px;
-  }
-  .container {
-    width: 1200px;
   }
   .footer {
     .content_info {
@@ -32,16 +26,25 @@
   }
 
 }
+@media (min-width: 768px) {
+  .login {
+    align-self: flex-end;
+    margin-left:auto;
+  }
+}
   //Планшет
 @media (max-width: 768px) {
   html {
     font-size: 14px;
   }
-  .login {
-    right: rem(20px);
+  .mountain_bg img {
+    max-height: 250px;
   }
-  .container {
-    width: 768px;
+  .copy .copyright {
+    display: block;
+    &::after {
+      display: none;
+    }
   }
   .map .map__list_item {
     display: block;
@@ -57,6 +60,7 @@
     float: none;
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
   }
 
 
@@ -146,12 +150,6 @@
       margin: auto;
       padding: 0 10px;
       box-sizing: border-box;
-    }
-    .login {
-      position: absolute;
-      top: rem(10px);
-      left: 50%;
-      margin-left: -89px;
     }
     .info-nav-list a {
       padding: 0;
