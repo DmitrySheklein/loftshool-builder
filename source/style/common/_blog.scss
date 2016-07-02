@@ -23,6 +23,18 @@
   max-width: 490px;
   float: left;
   min-height: 100%;
+  width: 30%;
+  position: relative;
+}
+.blog__themes.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.blog__list_wrapper {
+  position: relative;
+  height: 1px;
 }
 .blog__list {
   box-sizing: border-box;
@@ -31,6 +43,11 @@
   padding: 0;
   padding-left: 35%;
   text-align: right;
+
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
 }
 .blog__list_item {
   color: #455a64;
@@ -63,6 +80,8 @@
   max-width: 920px;
   padding-left: 20px;
   margin-bottom: 145px;
+  width: 70%;
+  box-sizing: border-box;
 }
 .content__article {
   box-sizing: border-box;

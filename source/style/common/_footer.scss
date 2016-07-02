@@ -50,10 +50,18 @@
     margin-left: 0;
   }
   .link {
-    font: 500 roboto;
     font-size: rem(16px);
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     text-decoration: none;
+    &:hover {
+      color: #0548be;
+    }
+    &:active {
+      color: #0548be;
+      opacity: .5;
+    }
   }
   .info-social {
     margin-top: auto;
@@ -86,11 +94,21 @@
       font-weight: 300;
       font-size: rem(16px);
       color: #fff;
-      opacity: .5;
-    }
-    .contacts_li {
-      margin-bottom: 5px;
-    }
+      }
+      .contacts_li {
+        margin-bottom: 5px;
+        }
+        .contacts_link {
+          color: #fff;
+          opacity: .5;
+          text-decoration: none;
+          &:hover {
+            color: #0548be;
+          }
+          &:active {
+            color: rgba(8,60,150,.85);
+          }
+        }
   }
   .copyright {
     position: absolute;

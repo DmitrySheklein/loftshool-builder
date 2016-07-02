@@ -77,10 +77,14 @@ footer.footer
                         </svg>
         .contacts
             ul.contacts_list
-                li.contacts_li dmitry.sheklein
-                li.contacts_li sheklein.dima@gmail.com
-                li.contacts_li +79998887766
-                li.contacts_li Нижний Новгород
+                li.contacts_li
+                 a.contacts_link(href='skype:dmitry.sheklein') dmitry.sheklein
+                li.contacts_li
+                    a.contacts_link(href='mailto:sheklein.dima@gmail.com') sheklein.dima@gmail.com
+                li.contacts_li
+                    a.contacts_link(href='tel:dmitry.sheklein') +79998887766
+                li.contacts_li
+                    a.contacts_link(href='https://goo.gl/maps/pYNDrbFkVhz' target="_blank") Нижний Новгород
 
     .copyright
         span © Дмитрий Щеклеин |

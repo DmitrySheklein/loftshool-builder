@@ -96,19 +96,22 @@ body
             <svg viewBox="0 0 160 40" width="50%" class="header-corner">
                       <polygon points="160 0, 160 40, 0 40" preserveAspectRatio="none"></polygon>
             </svg>
-        aside.blog__themes
-            ul.blog__list
-                li.blog__list_item.blog__list_item-active
-                    a.blog__link(href='#') Самое важное в SASS
-                li.blog__list_item
-                    a.blog__link(href='#') Приемы в верстке, без которых
-                        | не обходится ни один сайт
-                li.blog__list_item
-                    a.blog__link(href='#') Автоматизация работы с Gulp
-                li.blog__list_item
-                    a.blog__link(href='#') Почему я выбрал Jade
-                li.blog__list_item
-                    a.blog__link(href='#') Немного про Bower
+        aside.blog__themes.fixed
+            .blog__list_wrapper
+        aside.blog__themes.static
+            .blog__list_wrapper
+                ul.blog__list
+                    li.blog__list_item.blog__list_item-active
+                        a.blog__link(href='#') Самое важное в SASS
+                    li.blog__list_item
+                        a.blog__link(href='#') Приемы в верстке, без которых
+                            | не обходится ни один сайт
+                    li.blog__list_item
+                        a.blog__link(href='#') Автоматизация работы с Gulp
+                    li.blog__list_item
+                        a.blog__link(href='#') Почему я выбрал Jade
+                    li.blog__list_item
+                        a.blog__link(href='#bower') Немного про Bower
         .blog__content
             .content__article
                 h3.content__header Самое важное в SASS
@@ -151,7 +154,7 @@ body
                     p.content__text-paragraph
                         | Jade — это препроцессор HTML и шаблонизатор, который был написан на JavaScript для Node.js. Проще говоря, Jade — это именно то средство, которое предоставляет вам возможность написания разметки совершенно по новому, с целым рядом преимуществ по сравнению с обычным HTML.
                         | Для себя я выделил три основные черты Jade: простые теги,добавление атрибутов в теги,блоки текста.
-            .content__article
+            .content__article(data-section="bower")
                             h3.content__header Немного про Bower
                             .content__date
                                 span 23 ноября 2016
