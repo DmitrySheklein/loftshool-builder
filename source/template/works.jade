@@ -102,11 +102,19 @@ html(lang='ru-RU')
                     a.container_link Просмотреть сайт
             .portfolio_content_img
                 .img_container
-                    img(src='./assets/img/work.png' class='main_picture')
+                    img(src='./assets/img/slide1.png' class='main_picture')
             .portfolio_content_nav
-                .nav_prev.nav_wrap
-                    img(src='./assets/img/work-1.jpg' class='slider_picture' width='100%' height='auto')
-                    a.nav_prev_link.
+                .nav_next.nav_wrap
+                    ul.slider_list
+                        li.slider_item
+                            img(src='./assets/img/slide1.png' class='slider_picture' width='100%' height='auto')
+                        li.slider_item
+                            img(src='./assets/img/slide2.png' class='slider_picture' width='100%' height='auto')
+                        li.slider_item
+                            img(src='./assets/img/slide3.png' class='slider_picture' width='100%' height='auto')
+                        li.slider_item.active
+                            img(src='./assets/img/slide4.png' class='slider_picture' width='100%' height='auto')
+                    a.nav_next_link.
                         <?xml version="1.0" encoding="utf-8"?>
                         <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -118,10 +126,17 @@ html(lang='ru-RU')
                         c0.391,0.391,0.391,1.031,0,1.422L13.293,15.871z"/>
                         </g>
                         </svg>
-
-                .nav_next.nav_wrap
-                    img(src='./assets/img/work-2.jpg' class='slider_picture' width='100%' height='auto')
-                    a.nav_next_link.
+                .nav_prev.nav_wrap
+                    ul.slider_list
+                        li.slider_item
+                            img(src='./assets/img/slide1.png' class='slider_picture' width='100%' height='auto')
+                        li.slider_item.active
+                            img(src='./assets/img/slide2.png' class='slider_picture' width='100%' height='auto')
+                        li.slider_item
+                            img(src='./assets/img/slide3.png' class='slider_picture' width='100%' height='auto')
+                        li.slider_item
+                            img(src='./assets/img/slide4.png' class='slider_picture' width='100%' height='auto')
+                    a.nav_prev_link.
                         <?xml version="1.0" encoding="utf-8"?>
                         <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -161,9 +176,9 @@ html(lang='ru-RU')
                 form.contact_form
                     .form_wrap
                         .form__title Связаться со мной
-                        input( type='text' class='form__input' placeholder='Ваше имя')
-                        input( type='email' class='form__input' placeholder='Ваш email')
-                        textarea( class='form_text' placeholder='Ваше сообщение')
+                        input( type='text' class='form__input' placeholder='Ваше имя' required='')
+                        input( type='email' class='form__input' placeholder='Ваш email' required='')
+                        textarea( class='form_text' placeholder='Ваше сообщение' required='')
                         .form__buttons
                             input.button.sybm(type='submit' value='Отправить')
                             input.button.clear(type='reset' value='Очистить')

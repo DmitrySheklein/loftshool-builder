@@ -20,7 +20,7 @@
 }
 .mountain_bg {
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   left: 0;
   height: auto;
   max-height: 400px;
@@ -189,7 +189,8 @@
   .autorize-nav-list:first-child {
     width: 50%;
   }
-  a {
+  .nav-link,
+  .nav-btn-subm {
     display: block;
     height: 45px;
     padding: 0 30px;
@@ -202,9 +203,15 @@
     text-decoration: none;
     color: #fff;
     background-color: rgba(0, 76, 209, 0.85);
+    &:hover {
+      background-color: rgba(4, 62, 163, 0.85);
+    }
   }
-  a:hover{
-    background-color: rgba(4, 62, 163, 0.85);
+  .nav-btn-subm {
+    border: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
   }
 }
 

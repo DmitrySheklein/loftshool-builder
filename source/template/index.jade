@@ -20,7 +20,7 @@ html(lang='ru-RU')
     video(width='100%', height='auto', autoplay='autoplay', loop='loop', preload='auto', sophis-video-control='true', )
       source(src='assets/img/night.mp4')
     .mountain_bg
-      img.img(src='assets/img/mountains_bg.png' alt='mountain')
+      img.img(src='assets/img/mountains_bg_low.png' alt='mountain')
   .container
     .login
         a(href="/") Авторизоваться
@@ -96,35 +96,35 @@ html(lang='ru-RU')
               </svg>
         ul.info-footer-nav
           li.info-nav-list
-            a(href='works.html') Мои работы
+            a.nav-link(href='works.html') Мои работы
           li.info-nav-list
-            a(href='about.html') Обо мне
+            a.nav-link(href='about.html') Обо мне
           li.info-nav-list
-            a(href='blog.html') Блог
+            a.nav-link(href='blog.html') Блог
       .user-authorize
         .authorize
           h1 Авторизуйтесь
         .authorize-form
           form.form-body
             .wrap
-              input(type='text' class='input wrap' placeholder='Логин')
+              input(type='text' class='input wrap' placeholder='Логин' required='')
             .wrap
-              input(type='password' class='input wrap' placeholder='Пароль')
+              input(type='password' class='input wrap' placeholder='Пароль' required='')
             .human-test
-              input(type='checkbox' id='human')
+              input(type='checkbox' id='human' required='')
               label(for='human') Я человек
             .robot-test
               .text
                 Вы точно не робот?
-              input(name="is-robot" type='radio' id='yes'  value='yes')
+              input(name="is-robot" type='radio' id='yes'  value='yes' required='')
               label(for='yes' class='radiobtn') Да
               input(name="is-robot" type='radio' id='no' value='no')
               label(for='no' class='radiobtn') Не уверен
             ul.autorize-footer-btn
               li.autorize-nav-list
-                a.home-link(href='index.html') На главную
+                a.home-link.nav-link(href='index.html') На главную
               li.autorize-nav-list
-                a(href='/') Войти
+                input.nav-btn-subm(type='submit' value='Войти')
     .copy
       span.copyright © Дмитрий Щеклеин
       | создано с любовью в LoftSchool | 2016
