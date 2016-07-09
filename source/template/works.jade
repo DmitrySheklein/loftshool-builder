@@ -1,5 +1,6 @@
 doctype html
 html(lang='ru-RU')
+    - var name = "Мои работы"
     include common/_head
     body
         header.header
@@ -99,7 +100,7 @@ html(lang='ru-RU')
                         li.skills_item Html,
                         li.skills_item Css,
                         li.skills_item javascript
-                    a.container_link Просмотреть сайт
+                    a.container_link(href="https://loftschool.com" target="_blank") Просмотреть сайт
             .portfolio_content_img
                 .img_container
                     img(src='./assets/img/slide1.png' class='main_picture')
@@ -112,7 +113,7 @@ html(lang='ru-RU')
                             img(src='./assets/img/slide2.png' class='slider_picture' width='100%' height='auto')
                         li.slider_item
                             img(src='./assets/img/slide3.png' class='slider_picture' width='100%' height='auto')
-                        li.slider_item.active
+                        li.slider_item.slider_item_active
                             img(src='./assets/img/slide4.png' class='slider_picture' width='100%' height='auto')
                     a.nav_next_link.
                         <?xml version="1.0" encoding="utf-8"?>
@@ -130,7 +131,7 @@ html(lang='ru-RU')
                     ul.slider_list
                         li.slider_item
                             img(src='./assets/img/slide1.png' class='slider_picture' width='100%' height='auto')
-                        li.slider_item.active
+                        li.slider_item.slider_item_active
                             img(src='./assets/img/slide2.png' class='slider_picture' width='100%' height='auto')
                         li.slider_item
                             img(src='./assets/img/slide3.png' class='slider_picture' width='100%' height='auto')
