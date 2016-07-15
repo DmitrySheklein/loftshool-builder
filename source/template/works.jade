@@ -3,7 +3,8 @@ html(lang='ru-RU')
     - var name = "Мои работы"
     include common/_head
     body
-        header.header
+        include common/_sandwich_menu
+        header.header#to_top
             .header_top
                 ul.header__social_menu
                     li.social-list
@@ -77,7 +78,7 @@ html(lang='ru-RU')
                 .user_block_name Дмитрий Щеклеин
                 .user_block_descr Личный сайт веб разработчика
             .arrow_down
-                a(href='/' class='to-work').
+                a(href='#towork' class='to-work').
                     <?xml version="1.0" encoding="utf-8"?>
                     <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -92,7 +93,7 @@ html(lang='ru-RU')
         .block_portfolio
             .portfolio_header
                 h2.portfolio_header__title Мои работы
-            .portfolio_content_descr
+            .portfolio_content_descr#towork
                 .descr_container
                     .descr_container__title
                         h3 Сайт школы онлайн образования
@@ -184,7 +185,7 @@ html(lang='ru-RU')
                             input.button.sybm(type='submit' value='Отправить')
                             input.button.clear(type='reset' value='Очистить')
             .arrow_up
-                a(href='/' class='to-top').
+                a(href='#to_top' class='to-top').
                         <?xml version="1.0" encoding="utf-8"?>
                         <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -197,7 +198,7 @@ html(lang='ru-RU')
                         </g>
                         </svg>
             include common/_footer
-    include common/_sandwich_menu
+
 
 
 

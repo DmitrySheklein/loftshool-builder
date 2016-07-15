@@ -156,12 +156,14 @@
   }
   .social-link {
     cursor: pointer;
+    &:hover .vk-svg,
+    &:hover .github-svg,
+    &:hover .linked-in {
+      fill: rgb(0, 76, 209);
+    }
   }
   .vk-svg,.github-svg,.linked-in {
     fill: rgba(0, 76, 209, 0.7);
-  }
-  .vk-svg:hover,.github-svg:hover,.linked-in:hover {
-    fill: rgb(0, 76, 209);
   }
 }
 
