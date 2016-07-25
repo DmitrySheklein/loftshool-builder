@@ -1,5 +1,6 @@
 .main_about_me {
   position: relative;
+  min-height: 100vh;
 }
 .about_me_svg {
   position: absolute;
@@ -23,7 +24,8 @@
 .info-about-me {
   //max-width: 890px;
   width: 50%;
-  min-height: rem(833px);
+  height: 100%;
+  //min-height: rem(833px);
   background: #F0EFE9;
   float: left;
   .about_me_title {
@@ -68,7 +70,8 @@
   float: left;
   //max-width: 890px;
   width: 50%;
-  min-height: rem(833px);
+  height: 100%;
+  //min-height: rem(833px);
   padding-left: rem(30px);
   box-sizing: border-box;
   background: #EFEBE0;

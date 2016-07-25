@@ -30,7 +30,7 @@
 // // MENU
 (function () {
     $('.sandwich').on("click", function (e) {
-        event.preventDefault();
+        e.preventDefault();
         $('.sandwich').css('display', 'none');
         $('#menu').css('display', 'block');
         $('.menu').addClass('active');
@@ -38,7 +38,7 @@
     });
 
     $('#btn_close').on("click", function (e) {
-        event.preventDefault();
+        e.preventDefault();
         $('#menu').css('display', 'none');
         $('.sandwich').css('display', 'block');
     });
@@ -170,7 +170,7 @@ $(window).on('mousemove', function (e) {
     function slideInLeftPreview(slideItems) {
         var nextImgIndex;
 
-        if(currentSlideIndex + 1 >= slideItems.lenght){
+        if(currentSlideIndex + 1 >= slideItems.length){
             nextImgIndex = 0;
         }else {
             nextImgIndex = currentSlideIndex + 1;
@@ -183,7 +183,7 @@ $(window).on('mousemove', function (e) {
         var nextImgIndex;
 
         if (currentSlideIndex == 0){
-            nextImgIndex = slideItems.lenght - 1;
+            nextImgIndex = slideItems.length - 1;
         }else {
             nextImgIndex = currentSlideIndex - 1;
         }

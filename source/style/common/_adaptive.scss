@@ -54,7 +54,13 @@
     margin-bottom: 0;
   }
   .blog__themes {
-    display: none;
+    //display: none;
+    //position: fixed;
+    background-color: rgba(0, 30, 82, 0.9);
+    z-index: 1;
+    .blog__link {
+      color: #ffffff;
+    }
   }
   .blog__content {
     float: none;
