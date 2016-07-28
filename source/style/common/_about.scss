@@ -1,6 +1,5 @@
 .main_about_me {
   position: relative;
-  min-height: 100vh;
 }
 .about_me_svg {
   position: absolute;
@@ -20,14 +19,14 @@
     fill: #F0EFE9;
   }
 }
-
+.about_me_wrapper {
+  display: table;
+}
 .info-about-me {
-  //max-width: 890px;
+  display: table-cell;
+  vertical-align: top;
   width: 50%;
-  height: 100%;
-  //min-height: rem(833px);
   background: #F0EFE9;
-  float: left;
   .about_me_title {
     float: left;
     width: rem(340px);
@@ -67,11 +66,9 @@
 }
 
 .advantages {
-  float: left;
-  //max-width: 890px;
+  display: table-cell;
+  vertical-align: top;
   width: 50%;
-  height: 100%;
-  //min-height: rem(833px);
   padding-left: rem(30px);
   box-sizing: border-box;
   background: #EFEBE0;

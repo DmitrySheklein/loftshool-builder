@@ -99,120 +99,121 @@ body
             <polygon points="0,0 0,100 50,100" class="svg__item about_me_svg_left"></polygon>
             </g>
             </svg>
-        section.info-about-me.clearfix
-            .about_me_title
-                h1.me_title Обо мне
-            .block-about
-                img.about-pict(src='assets/img/avatar.jpg' alt='my photo' width='' height='390px')
-                h2.text_title Кто я
-                p.text_about_me
-                    | Я веб разработчик из Нижнего Новгорода. Мне 20 лет. 
-                    | Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                p.text_about_me
-                    | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент.
-                    | А пока посмотрите,как тут всё классно и красиво!
-        section.advantages
-            h2.text_title
-                |Чем я могу быть
-                |вам полезен
-            p.my-prof
-                | Больше всего меня привлекет Frontend разработка, но я также знаком и
-                | могу решать не сложные задачи на Backend. Но давайте по порядку.
-            .graphics
-                .front
-                    h3 Frontend
-                    ul.diagrams
-                        li.dia.html5.
-                            <svg width="130" height="130"
-                            class="g-circles">
-                              <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                              <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                              <text x="65" y="50%" class="diagram__text">HTML5</text>
-                            </svg>
-                        li.dia.css3.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">CSS3</text>
-                            </svg>
-                        li.dia.js.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">
-                            <tspan x="65" y="50%">JavaScript</tspan>
-                            <tspan x="65" y="60%">& jQuery</tspan>
-                            </text>
-                            </svg>
-                .back
-                    h3 Backend
-                    ul.diagrams
-                        li.dia.php.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">PHP</text>
-                            </svg>
-                        li.dia.mysql.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">mySQL</text>
-                            </svg>
-                        li.dia.nodejs.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">
-                            <tspan x="65" y="50%">Node.js</tspan>
-                            <tspan x="65" y="60%">& npm</tspan></text>
-                            </svg>
-                        li.dia.mongo.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">Mongo.db</text>
-                            </svg>
-                .workflow
-                    h3 WorkFlow
-                    ul.diagrams
-                        li.dia.git.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">Git</text>
-                            </svg>
-                        li.dia.gulp.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">Gulp</text>
-                            </svg>
-                        li.dia.bower.
-                            <svg width="130" height="130"
-                            class="g-circles" >
-                            <circle r="50"
-                            cx="65" cy="65" stroke="#ccc" fill="none"/>
-                            <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
-                            <text x="65" y="50%" class="diagram__text">Bower</text>
-                            </svg>
+        .about_me_wrapper
+            section.info-about-me.clearfix
+                .about_me_title
+                    h1.me_title Обо мне
+                .block-about
+                    img.about-pict(src='assets/img/avatar.jpg' alt='my photo' width='' height='390px')
+                    h2.text_title Кто я
+                    p.text_about_me
+                        | Я веб разработчик из Нижнего Новгорода. Мне 20 лет. 
+                        | Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    p.text_about_me
+                        | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент.
+                        | А пока посмотрите,как тут всё классно и красиво!
+            section.advantages
+                h2.text_title
+                    |Чем я могу быть
+                    |вам полезен
+                p.my-prof
+                    | Больше всего меня привлекет Frontend разработка, но я также знаком и
+                    | могу решать не сложные задачи на Backend. Но давайте по порядку.
+                .graphics
+                    .front
+                        h3 Frontend
+                        ul.diagrams
+                            li.dia.html5.
+                                <svg width="130" height="130"
+                                class="g-circles">
+                                  <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                  <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                  <text x="65" y="50%" class="diagram__text">HTML5</text>
+                                </svg>
+                            li.dia.css3.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">CSS3</text>
+                                </svg>
+                            li.dia.js.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">
+                                <tspan x="65" y="50%">JavaScript</tspan>
+                                <tspan x="65" y="60%">& jQuery</tspan>
+                                </text>
+                                </svg>
+                    .back
+                        h3 Backend
+                        ul.diagrams
+                            li.dia.php.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">PHP</text>
+                                </svg>
+                            li.dia.mysql.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">mySQL</text>
+                                </svg>
+                            li.dia.nodejs.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">
+                                <tspan x="65" y="50%">Node.js</tspan>
+                                <tspan x="65" y="60%">& npm</tspan></text>
+                                </svg>
+                            li.dia.mongo.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">Mongo.db</text>
+                                </svg>
+                    .workflow
+                        h3 WorkFlow
+                        ul.diagrams
+                            li.dia.git.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">Git</text>
+                                </svg>
+                            li.dia.gulp.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">Gulp</text>
+                                </svg>
+                            li.dia.bower.
+                                <svg width="130" height="130"
+                                class="g-circles" >
+                                <circle r="50"
+                                cx="65" cy="65" stroke="#ccc" fill="none"/>
+                                <circle r="50" cx="65" cy="65" stroke="#1056d1" transform="rotate(-90 65 65)" class="sector"/>
+                                <text x="65" y="50%" class="diagram__text">Bower</text>
+                                </svg>
     section.map
         div#map
         address.contacts-info

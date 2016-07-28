@@ -3,7 +3,6 @@ html(lang='ru-RU')
     - var name = "Мои работы"
     include common/_head
     body
-        include common/_sandwich_menu
         header.header#to_top
             .header_top
                 ul.header__social_menu
@@ -155,25 +154,25 @@ html(lang='ru-RU')
                 h2.about_me_title Что обо мне говорят
             .about_me_reviews_container
                 .about_me_reviews
-                    .reviews_container
+                    .user_photo_container
                         .user_photo
                             img(src='assets/img/dima.jpg' alt='dima')
-                        .container_txt Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                        .container_user
-                                p.name.
-                                    Ковальчук Дмитрий
-                                p.
-                                    - основатель Loftschool
+                    .container_txt Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .container_user
+                            p.name.
+                                Ковальчук Дмитрий
+                            p.
+                                - основатель Loftschool
                 .about_me_reviews
-                    .reviews_container
+                    .user_photo_container
                         .user_photo
                             img(src='assets/img/zar.jpg' alt='zar')
-                        .container_txt Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-                        .container_user
-                                p.name.
-                                    Зар Захаров
-                                p.
-                                    - главный преподаватель
+                    .container_txt Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    .container_user
+                            p.name.
+                                Зар Захаров
+                            p.
+                                - главный преподаватель
             .about_me_contact_form
                 form.contact_form
                     .form_wrap
@@ -198,6 +197,7 @@ html(lang='ru-RU')
                         </g>
                         </svg>
             include common/_footer
+    include common/_sandwich_menu
 
 
 

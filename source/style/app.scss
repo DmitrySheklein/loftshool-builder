@@ -337,6 +337,7 @@ body {
 .about_me {
   position: relative;
   height: rem(1353px);
+  box-sizing: border-box;
   width: 100%;
   background: url("../img/night-tree.jpg") center no-repeat;
   background-size: cover;
@@ -362,17 +363,11 @@ body {
       }
   .about_me_reviews_container {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
     }
     .about_me_reviews {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       max-width: rem(380px);
-      margin-left: rem(20px);
-      &:first-child {
-        margin-left: 0;
-      }
       .user_photo {
         margin: 0 auto;
         margin-bottom: rem(20px);
