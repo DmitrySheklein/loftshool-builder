@@ -6,17 +6,13 @@ html(lang='ru-RU')
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
-  .preloader
-    .loader-circle.
-      <?xml version="1.0" encoding="utf-8"?>
-      <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-      <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="52.586px" height="63.73px" viewBox="0 0 52.586 63.73" enable-background="new 0 0 52.586 63.73" xml:space="preserve">
-      <text transform="matrix(1 0 0 1 5.772 45.0889)" font-family="'ArialMT'" font-size="24">100</text>
-      <circle fill="none" stroke="#000000" stroke-width="2.5864" stroke-miterlimit="10" cx="26.293" cy="37.438" r="25"/>
-      <circle cx="26.293" cy="4.5" r="4.5"/>
+  .preloader(style='display: none;')
+    .preloader-inner(style='display: none;').
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 100 100" xml:space="preserve" class="circle">
+      <circle fill="none" transform="rotate(-90 50 25)" stroke-width="2.5864" cx="25" cy="25" r="25" class="circle-bar" style="stroke-dashoffset: 160px;"></circle>
+      <circle cx="50" cy="15" r="4.5" class="circle-small" style="animation-iteration-count: 1;"></circle>
       </svg>
+      <span class="circle-txt">99</span>
   .video_bg
     video(width='auto', height='auto', autoplay='autoplay', loop='loop', preload='auto', sophis-video-control='true', )
       source(src='assets/img/night.mp4')

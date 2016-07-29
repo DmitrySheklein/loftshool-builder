@@ -5,8 +5,11 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  visibility: hidden;
 }
-
+.active  {
+  visibility: visible;
+}
 .nav_menu:after,
 .nav_menu:before{
   content:'';
