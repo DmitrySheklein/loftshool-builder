@@ -6,6 +6,7 @@
   height: 100%;
   overflow: hidden;
   visibility: hidden;
+  z-index: 1;
 }
 .active  {
   visibility: visible;
@@ -42,8 +43,8 @@
 .menu-toggle {
   display: none;
   position: absolute;
-  top: 35px;
-  right: 20px;
+  top: 28px;
+  right: 30px;
   background: transparent;
   border: none;
   padding: 0;

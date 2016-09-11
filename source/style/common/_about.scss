@@ -28,11 +28,22 @@
   width: 50%;
   background: #F0EFE9;
   .about_me_title {
-    float: left;
-    width: rem(340px);
+    //float: left;
+    //width: rem(340px);
     text-align: center;
     margin-bottom: rem(50px);
-    background: url(../img/star2.png) no-repeat;
+    position: relative;
+    &_bg {
+      position: absolute;
+      top: -50%;
+      left:50%;
+      transform: translate(-50%,0);
+      .about_me_bg{
+        fill: rgba(71, 75, 87, 0.2);
+        stroke: rgba(71, 75, 87, 0.2);
+        transform: rotate(-180deg);
+      }
+    }
   }
   .me_title {
     margin-top: 0;
@@ -42,10 +53,11 @@
     line-height: rem(66px);
     font-weight: 400;
     color: #373e42;
+    position: relative;
   }
   .block-about {
-    float: right;
-    width: rem(480px);
+    //float: right;
+    //width: rem(480px);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -151,9 +163,9 @@
 }
 
 .text_title {
+  //width: 240px;
   position: relative;
   margin-top: rem(41px);
-  height: rem(25px);
   font-size: rem(35px);
   line-height: rem(41px);
   font-family: Sansus,sans-serif;
@@ -165,7 +177,7 @@
   display: block;
   content: '';
   position: absolute;
-  bottom: rem(-30px);
+  //bottom: rem(-30px);
   left: 50%;
   margin-left: rem(-44.5px);
   width: rem(89px);
@@ -187,17 +199,24 @@
       height: auto;
     }
   }
+  iframe {
+    position: relative;
+  }
   .contacts-info {
-    max-width: rem(580px);
+    //max-width: rem(580px);
+    width: 100%;
     min-height: rem(285px);
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
+    //transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: rem(18px) rem(10px) rem(30px) rem(16px);
-    transform: translate(-50%, -50%);
     background: rgba(255,255,255,0.7);
     font-style: normal;
+    background: #fafafa;
+    z-index: 1;
+
   }
   .text_title {
     margin-top: 0;
@@ -207,7 +226,9 @@
   .map__contacts_list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    //margin: 0;
+    width: 320px;
+    margin: 0 auto;
   }
   .map__list_item {
     position: relative;
@@ -228,13 +249,19 @@
     padding-left: rem(8px);
     color: #474b57;
     text-decoration: none;
-  }
+    &:hover {
+      color: #004CD1;
+      }
+    &:active {
+      color: #00399e;
+      }
+    }
   .item:before {
     display: inline-block;
     vertical-align: middle;
     content: '';
-    width: rem(45px);
-    height: rem(45px);
+    width: 45px;
+    height: 45px;
   }
   .skype:before {
     background: url(../img/skype_n.svg) center no-repeat;
@@ -256,5 +283,11 @@
 
 div#map{
   height: 100%;
-  background-color: #0000AA;
+  //background-color: #0000AA;
+  background: rgba(0,0,0,.01);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

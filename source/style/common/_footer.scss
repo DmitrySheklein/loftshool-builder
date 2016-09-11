@@ -7,108 +7,108 @@
   padding-top: rem(25px);
   left: 0;
   background-color: rgba(28,31,41,.85);
-  .content_info {
-    box-sizing: border-box;
-    max-width: rem(600px);
-    padding-left: rem(30px);
-    padding-right: rem(30px);
-    float: left;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    height: rem(96px);
-  }
-  .info_text {
-    margin: 0;
-    font-size: rem(16px);
-    line-height: rem(24px);
-    font-family: 'roboto';
-    font-weight: 300;
-    color: #fff;
-  }
-  .navigation-map {
-    box-sizing: border-box;
+  .content_inner {
     display: flex;
-    flex-direction: column;
-    max-width: rem(580px);
-    padding-left: rem(30px);
-    padding-right: rem(30px);
-    float: left;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    height: 96px;
+    justify-content: space-between;
   }
-  .block_menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .block_menu_list {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 0;
-    margin-left: rem(41px);
-  }
-  .block_menu_list:first-child {
-    margin-left: 0;
-  }
-  .link {
-    font-size: rem(16px);
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-    text-decoration: none;
-    &:hover {
-      color: #0548be;
+    .content_info {
+      box-sizing: border-box;
+      max-width: rem(350px);
+      padding-left: rem(30px);
+      padding-right: rem(30px);
+      font-size: rem(16px);
+      line-height: rem(24px);
+      font-family: 'roboto';
+      font-weight: 300;
+      color: #fff;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
-    &:active {
-      color: #0548be;
-      opacity: .5;
+    .navigation-map {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      max-width: rem(580px);
+      padding-left: rem(30px);
+      padding-bottom: rem(10px);
+      width: 35%;
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
     }
-  }
-  .info-social {
-    margin-top: auto;
-    margin-left: 0;
-    font-size: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-
-  }
-  .social-list {
-    margin-left: rem(27px);
-  }
-  .vk-svg,.github-svg,.linked-in {
-    fill: rgba(255,255,255,.5);
-  }
-  .contacts {
-    box-sizing: border-box;
-    max-width: rem(600px);
-    padding-left: rem(30px);
-    padding-right: rem(30px);
-    float: left;
-    height: 96px;
-    .contacts_list {
+    .block_menu {
       list-style: none;
       margin: 0;
       padding: 0;
-      font-family: 'roboto';
-      font-weight: 300;
+      font-size: 0;
+    }
+    .block_menu_list {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0;
+      margin-right: rem(40px);
+    }
+    .block_menu_list:last-child {
+      margin-right: 0;
+    }
+    .link {
       font-size: rem(16px);
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
       color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: #0548be;
       }
-      .contacts_li {
-        margin-bottom: 5px;
+      &:active {
+        color: #0548be;
+        opacity: .5;
+      }
+    }
+    .info-social {
+      margin-top: auto;
+      margin-left: 0;
+      font-size: 0;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+
+    }
+    .social-list {
+      margin-left: rem(27px);
+    }
+    .vk-svg,.github-svg,.skype-svg {
+      fill: rgba(255,255,255,.5);
+    }
+    .contacts {
+      box-sizing: border-box;
+      width: 30%;
+      padding-left: rem(30px);
+      padding-right: rem(30px);
+      height: 96px;
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      .contacts_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-family: 'roboto';
+        font-weight: 300;
+        font-size: rem(16px);
+        color: #fff;
         }
-        .contacts_link {
-          color: #fff;
-          opacity: .5;
-          text-decoration: none;
-          &:hover {
-            color: #0548be;
+        .contacts_li {
+          margin-bottom: 5px;
           }
-          &:active {
-            color: rgba(8,60,150,.85);
+          .contacts_link {
+            color: #fff;
+            opacity: .5;
+            text-decoration: none;
+            &:hover {
+              color: #0548be;
+            }
+            &:active {
+              color: rgba(8,60,150,.85);
+            }
           }
-        }
   }
   .copyright {
     position: absolute;

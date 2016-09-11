@@ -52,6 +52,7 @@ body {
   height: 100vh;
   min-height: 650px;
   background: url("../img/night-photo.jpg") no-repeat top center;
+  background-attachment: fixed;
   background-size: cover;
   position: relative;
   .header_top {
@@ -69,7 +70,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    height: rem(22px);
+    //height: rem(22px);
     font-size: 0;
   }
   .social-list {
@@ -96,18 +97,17 @@ body {
     border: none;
     background: transparent;
     margin-left: auto;
+    font-size: 0;
     &:hover .devide {
       background-color: #0548be;
     }
   }
   .devide {
-    display: block;
-    height: 5px;
+    display: inline-block;
+    height: rem(5px);
     width: 100%;
-    margin: 10px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin: 0;
+    margin-bottom: 5px;
     border-radius: 3px;
     background-color: #fff;
   }
@@ -124,10 +124,25 @@ body {
 .user_block {
   max-width: rem(500px);
   min-height: rem(270px);
-  margin-left: auto;
-  margin-right: auto;
-  background: url(../img/star.png) no-repeat 50%;
-  .user_block_photo {
+  //margin-left: auto;
+  //margin-right: auto;
+  //position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  &_bg {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .star1 {
+      width: 459px;
+      height: 270px;
+      opacity: .2;
+    }
+  }
+  &_photo {
     position: relative;
     width: rem(141px);
     height: rem(141px);
@@ -143,7 +158,7 @@ body {
       top:0;
       left: 0;
     }
-  .user_block_name {
+  &_name {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: rem(35px);
@@ -157,7 +172,7 @@ body {
     font-weight: normal;
     text-transform: uppercase;
   }
-  .user_block_descr {
+  &_descr {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: rem(16px);
@@ -215,8 +230,17 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .description_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
   .descr_container {
+    display: none;
     width: rem(480px);
+    &.active {
+      display: block;
+    }
   }
   .descr_container__title {
     margin: 0;
@@ -307,6 +331,19 @@ body {
     width: 50%;
     position: relative;
     cursor: pointer;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba( 0,0,0,.2);
+      }
+    &:hover {
+      background: rgba( 0,0,0,.1);
+    }
     }
     .slider_item {
       display: none;
@@ -316,8 +353,8 @@ body {
     }
     .slider_picture {
       position: absolute;
-      max-width: 100%;
-      max-height: 100%;
+      max-width: 95%;
+      max-height: 95%;
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
@@ -336,7 +373,6 @@ body {
 
 .about_me {
   position: relative;
-  height: rem(1353px);
   box-sizing: border-box;
   width: 100%;
   background: url("../img/night-tree.jpg") center no-repeat;
@@ -363,6 +399,7 @@ body {
       }
   .about_me_reviews_container {
     display: flex;
+    padding: 0 5px;
     }
     .about_me_reviews {
       display: flex;
@@ -424,14 +461,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
+
     .form_wrap {
       position: relative;
       padding: 0 20px;
-      padding-bottom: rem(45px);
+      padding-bottom: rem(55px);
       padding-top: rem(40px);
       height: 100%;
     }
+      .form_wrap_blur {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        filter: blur(3px);
+        background-image: url("../img/night-tree.jpg");
+        background-position: center center;
+      }
       .form__title {
         position: relative;
         color: white;
@@ -466,6 +517,7 @@ body {
         background-color: rgba(255,255,255,.07);
         border: none;
         color: white;
+        position: relative;
       }
       .form_text {
         box-sizing: border-box;
@@ -477,45 +529,57 @@ body {
         border: none;
         background-color: rgba(255,255,255,.07);
         color: white;
+        position: relative;
       }
-}
-
-.form__buttons {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  .button {
-    display: table-cell;
-    width: 50%;
-    height: rem(45px);
-    border:none;
-    cursor: pointer;
-  }
+  .form__buttons {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .button {
+      display: table-cell;
+      width: 50%;
+      height: rem(45px);
+      border:none;
+      cursor: pointer;
+      border-radius: 0;
+      outline: 0;
+    }
     .sybm {
       background-color: #004cd1;
       color: #fff;
-      }
+    }
     .sybm:hover {
-        background-color: rgba(4, 62, 163, 0.85);
-        }
+      background-color: rgba(4, 62, 163, 0.85);
+    }
     .clear {
       background-color: transparent;
       color: rgba(255,255,255,.5);
-      }
-      .clear:hover {
-          background-color: rgba(255, 255, 255, 0.05);
-        }
+    }
+    .clear:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
 
+  }
+  .arrow_up {
+    margin-bottom: 40px;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+  .footer {
+    position: relative;
+    .copyright {
+      position: relative;
+    }
+  }
 }
 
-.arrow_up {
-  transform: rotate(180deg);
-  cursor: pointer;
-}
+
+
+
 
 //Футер основной
 

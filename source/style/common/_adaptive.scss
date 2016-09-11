@@ -40,6 +40,13 @@
   .mountain_bg img {
     max-height: 250px;
   }
+  .user_block_bg {
+    top: 30%;
+    .star1 {
+      width: 281px;
+      height: 167px;
+    }
+  }
   .copy .copyright {
     display: block;
     &::after {
@@ -73,6 +80,14 @@
   }
 
 //    обо мне
+  .main_about_me_header {
+    .header-corner:last-of-type {
+        fill: #F0EFE9;
+    }
+  }
+  .about_me_wrapper {
+    display: block;
+  }
   .info-about-me {
     width: 100%;
     float: none;
@@ -90,6 +105,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding-left: 0;
   }
 
   .info-about-me .block-about {
@@ -117,38 +133,66 @@
     min-height: 215px;
   }
 
-  .about_me {
-    padding: 0 10px;
-    padding-bottom: 150px;
-  }
   //
   .footer {
     padding-top: rem(10px);
+    .content_inner {
+      flex-wrap: wrap;
+    }
     .content_info {
-      float: none;
       max-width: 100%;
+      width: 100%;
       text-align: center;
-      height: rem(45px);
       border-right: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
     .navigation-map {
-      max-width: rem(550px);
-      border-right: none;
+      width: 65%;
+      border-left: 0;
       height: auto;
       padding-top: rem(10px);
+      padding-bottom:rem(10px);
+
     }
     .block_menu {
       margin-bottom: rem(15px);
     }
     .contacts {
-      float: right;
+      width: 35%;
+      padding-left: 0;
       text-align: right;
       padding-top: rem(10px);
+      margin-bottom: rem(10px);
+      border-left: 0;
     }
   }
 }
+@media (max-width: 580px) {
+  .footer {
+    .content_inner {
+      flex-direction: column;
+      align-items: center;
+    }
 
+    .navigation-map {
+      width: 100%;
+      align-items: center;
+      .block_menu {
+        margin-bottom: rem(15px);
+        &_list {
+          margin-right: rem(21px);
+        }
+      }
+
+    }
+
+    .contacts {
+      width: 100%;
+      text-align: center;
+      padding-right: 0;
+    }
+  }
+}
   //Мобильные
 @media (max-width: 380px) {
     html {
@@ -165,14 +209,11 @@
     }
 
 //    обо мне
+
   .advantages .dia {
-    margin-right: rem(24px);
+    margin-right: rem(12px);
   }
-  .map .contacts-info {
-    width: 100%;
-    top:25%;
-    background: rgba(255, 255, 255, 1);
-  }
+
   //Портфолио
   .block_portfolio {
     flex-wrap: nowrap;
@@ -187,21 +228,19 @@
   .block_portfolio .portfolio_content_nav {
     min-height: 93px;
   }
-  .about_me_reviews_container {
-    flex-direction: column;
+  .about_me .about_me_reviews_container {
+    display: block;
+    //flex-direction: column;
   }
+
   //
 //footer
   .footer {
-    .content_info {
-      height: rem(60px);
-    }
     .navigation-map {
+      padding:0 rem(10px);
       padding-bottom: rem(20px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      .block_menu_list {
-        margin-left: rem(15px);
-      }
+      padding-top: 15px;
     }
 
     .info-social {
@@ -218,3 +257,33 @@
 }
 
 
+@media (min-width: 736px) {
+  .map .contacts-info {
+    position: absolute;
+    width: 350px;
+    top: 10%;
+    left: 50%;
+    margin-left: -175px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    .map__list_item {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 1200px){
+  .map .contacts-info {
+    width: 580px;
+    margin-left: -290px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .map__list_item {
+      width: 49%;
+      display: inline-block;
+    }
+  }
+  .map .map__contacts_list {
+    width: auto;
+  }
+}
